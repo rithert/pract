@@ -1,0 +1,101 @@
+/* resposive */
+@media (max-width:768px){
+    #header{
+        background: #00883E;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* border: 2px solid black; */
+        flex-direction: row-reverse;
+      
+    }
+
+    #header label{
+        display: block;
+        justify-content: center;
+        margin: 15px;
+        /* border: 2px solid black; */
+    }
+
+    #header .menu{
+        display: block;   
+        padding-bottom:  10px; 
+        
+    }
+
+    .menu .logo-box{
+        padding-top: 0px;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    #header .menu .list-container #home{
+        display: none;
+    }
+    
+    #header .menu .list-container #search{
+        display: none;
+    }
+
+    .menu .list-container .list .submenu span{
+        display: inline;
+        margin-right: 10px;
+    }
+
+    #header .menu .list-container{
+        position: absolute;
+        top: 87px;  /* en este caso altura del header de 50 */
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+        align-items: center ;
+    }
+
+    #header .menu .list-container ul{
+       
+        flex-direction: column;
+        background: #555;
+        /* border: 2px solid black; */
+    }
+
+    #header .menu .list-container ul li{
+        text-align: left;
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 15px;
+        
+    }
+
+    #header .menu .list-container  ul li:hover ul{
+        display: none;
+        position: relative;
+        width: 100%;
+       
+    }
+
+
+    .menu a span{
+        position: absolute;
+        right: 5px;
+
+    }
+
+    #header .menu  a {
+        width: 100%;
+        padding-right: 30px;
+        color: white;
+        /* border: 2px solid black; */
+    }
+
+    header .menu ul li:hover {
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    header #btn-menu:checked ~ .menu .list-container{
+        transform: translateX(0%);
+    }
+
+}

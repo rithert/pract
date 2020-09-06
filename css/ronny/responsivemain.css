@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #E9ECF4;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 100%;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: repeat(3, auto);
+
+	grid-template-areas: "header header header header"
+						 "sidebar2 contenido contenido sidebar"
+						 "sidebar2 contenido contenido sidebar1"
+						 ;
+
+
+
+
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .sidebar1,
+.contenedor .sidebar2 {
+	background: #fff;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background: #fff;
+	color: #fff;
+	grid-area: header;
+  width: 100%;
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+
+
+
+}
+
+
+
+.contenedor .sidebar {
+
+	grid-area: sidebar;
+
+
+}
+
+.contenedor .sidebar1 {
+
+
+	grid-area: sidebar1;
+
+}
+
+.contenedor .sidebar2 {
+
+
+	grid-area: sidebar2;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+
+	.contenedor {
+
+		grid-template-areas: "header header header header"
+
+						 "sidebar2 sidebar2 sidebar2 sidebar2"
+						 "contenido contenido contenido contenido"
+						 "sidebar sidebar sidebar sidebar"
+            "sidebar1 sidebar1 sidebar1 sidebar1";
+	}
+
+	.contenedor .sidebar2 {
+
+  	grid-area: sidebar2;
+margin: auto;
+
+  }
+
+
+  .contenedor .sidebar {
+
+  	grid-area: sidebar;
+margin: auto;
+
+  }
+
+  .contenedor .sidebar1 {
+
+
+  	margin: auto;
+
+  }
+}
