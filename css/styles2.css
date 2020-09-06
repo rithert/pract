@@ -33,6 +33,7 @@
 .menu .logo-box{
     margin-left: 20px;
     width: 10%;
+    /* border: 2px solid ; */
 
 }
 
@@ -42,17 +43,20 @@
     border-radius: 5px;
     margin-right: 20px;
     width: 85%;
+    /* border: 2px solid blue; */
 
 }
 
 .menu .list-container .list{
     display: flex ;
     width: 100%;
-    /* border: 2px solid black; */
+    /*   */
 }
 
 .menu .list-container .list #home{
-    width: 100px;
+    width: 50px;
+    /* border: 2px solid; */
+    margin-right: 10px;
 
 }
 
@@ -64,8 +68,13 @@
     list-style: none;
     width: calc(20% - 20px);
     text-align: center;
-    /* border: 2px solid black; */
+    /* border: 2px solid black; */ 
+    margin: 5px;
 
+}
+
+.menu .list-container .list #search{
+    width: 150px;
 }
 
 
@@ -91,7 +100,7 @@
 .menu .list-container .list li:hover > ul{
     display: block;
     border-radius: 5px;
-    width: calc(16% - 20px);
+    width: calc(18% - 20px);
 }
 
 
@@ -240,8 +249,9 @@
 }
 
 .container1 .middle .container-title .logo-mid{
-    width:25%;
-    margin-right: 20px;
+    width:15%;
+    margin-right: 10px;
+    margin-left: 20px;
     
 }
 
